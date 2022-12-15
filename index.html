@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOME WAZA</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d905ff3956.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <i id="burger" class="fas fa-bars fa-2x"></i>
+        <a href="./index.html"><img src="logo-kome-waza.jpg" alt="logo"></a>
+        <nav id="navigation">
+            <ul>
+                <li><a href="file:///C:/Users/Sandie/Desktop/ARINFO/Cours/HTML%20-%20CSS/Exercices/Kome%20Waza/index.html"
+                        title="home">Home</a></li>
+                <li><a href="#" title="locations">Locations</a></li>
+                <li><a href="#" title="orders">Online Orders</a></li>
+                <li><a href="#" title="menus">Menus</a></li>
+                <li><a href="#" title="catering">Catering</a></li>
+                <li><a href="#" title="options">Delivery Options</a></li>
+                <li><a href="#" title="more">More...</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="banniere"></div>
+
+    <section id="epices">
+        <img src="epices2.jpg" alt="epices" id="image_epices">
+        <article id="resto">
+            <h1>Kome Waza</h1>
+            <P>(ko-meh wa-za )</P>
+            <p>Respect the fish! Kome Waza strives to provide you with a delicate balance between time-honored Japanese
+                sushi traditions and exciting new Asian-inspired flavors in a refreshing new take on the East Coast poke
+                trend.</p>
+        </article>
+    </section>
+
+    <img src="images-slider.JPG" alt="slider" class="image">
+
+    <section id="menu">
+        <article id="signature">
+            <h2>SIGNATURE POKE</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><i class="fa-solid fa-heart"></i></td>
+                        <td><h4>1 WHITE SOY AVOCADO CREAM BOWL</h4></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Seared tuna over 8-grain brown rice with mixed greens, hijiki quinoa, white soy avocado
+                            cream sauce,
+                            sesame seeds, garlic chips, kizami nori, tobiko, and salsa</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><h4>2 SILKEN SHISO TOFU BOWL</h4></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Tuna and tofu over 8 - grain brown rice with mixed greens, hijiki quinoa, edamame, silken
+                            shiso tofu
+                            sauvocado, and kizami nori</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><h4>3 SALTED MANGO HAMACHI BOWL</h4></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Hamachi and scallops over mixed greens with mango, hijiki quinoa, edamame, tomato, mango
+                            anchovy sauce,
+                            masago, sesame seeds, and radish sprouts</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-pepper-hot"></i></td>
+                        <td><h4>4 POMEGRANATE CITRUS SPICE BOWL</h4></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Salmon over sushi rice with mixed greens, tomato, sweet onion, cucumber, edamame,
+                            pomegranate citrus
+                            spice sauce, ogo seaweed, sesame seeds, radish sprouts, and tobiko</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><h4>5 WASABI CASHEW TAKO BOWL</h4></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Octopus, scallops, and shrimp over kale cold noodles with mixed greens, hijiki quinoa,
+                            tomato, wasabi
+                            cashew peanut sauce, ogo seaweed, rice pop, and radish sprouts</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+            <img src="sushis.jpg" alt="sushis" class="image">
+
+    </section>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387156.2960836096!2d-74.32129801367378!3d40.7035168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1439cca535%3A0xc39aeb4e18004828!2sKome%20Waza!5e0!3m2!1sfr!2sfr!4v1668675426559!5m2!1sfr!2sfr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer>
+        <h3>Contact</h3>
+        <p>646-368-1727</p>
+        <p>info@komewaza.com</p>
+    </footer>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            // je cible mon hamburger et je surveille l'évènement clic
+            $('#burger').on('click', function () {
+                // je regarde la propriété display de la liste des liens
+                // si son display est sur none => la liste des liens est masquée
+                if ($('#navigation').css('display') == 'none') {
+                    // je fais passer cette propriété à block => menu visible
+                    $('#navigation').css('display', 'block');
+                }
+                // cas où le menu est visible
+                else {
+                    // je le masque
+                    $('#navigation').css('display', 'none');
+                }
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
